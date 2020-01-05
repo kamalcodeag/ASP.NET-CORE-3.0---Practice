@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Table1>
+
+@{
+    ViewData["Title"] = "TestProcedure";
+}
+
+@foreach (var item in Model)
+{
+    <p>@Convert.ToBase64String(item.Name)</p>
+}

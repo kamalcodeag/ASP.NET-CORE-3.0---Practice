@@ -1,0 +1,9 @@
+﻿@model Table1
+
+@{
+    ViewData["Title"] = "ThirdPage";
+
+    var base64 = Convert.ToBase64String(Model.Name);
+}
+
+<img src="data:image/jpg;base64, @base64" />
